@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Calculator_icon.svg/1200px-Calculator_icon.svg.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+  <h1 class="text-center my-5 text-success">Calculator</h1>
+  <div class="container d-flex justify-content-center align-items-center">
+
+    <div class="calculator">
+
+      <div class="display">
+        <input id="result" type="text">
+      </div>
+      
+      <div class="buttons">
+        <button class="btn clear ac" onclick="clearNum()" >AC</button>
+        <button class="btn clear" onclick="clearOne()" >DEL</button>
+        <button class="btn operator" onclick="displayNum('%')" >%</button>
+        <button class="btn operator" onclick="displayNum('*')" >x</button>
+        <button class="btn number" onclick="displayNum(7)" >7</button>
+        <button class="btn number" onclick="displayNum(8)" >8</button>
+        <button class="btn number" onclick="displayNum(9)" >9</button>
+        <button class="btn operator" onclick="displayNum('-')" >-</button>
+        <button class="btn number" onclick="displayNum(4)" >4</button>
+        <button class="btn number" onclick="displayNum(5)" >5</button>
+        <button class="btn number" onclick="displayNum(6)" >6</button>
+        <button class="btn operator" onclick="displayNum('+')" >+</button>
+        <button class="btn number" onclick="displayNum(1)" >1</button>
+        <button class="btn number" onclick="displayNum(2)" >2</button>
+        <button class="btn number" onclick="displayNum(3)" >3</button>
+        <button class="btn operator" onclick="displayNum('/')" >/</button>
+        <button class="btn number" onclick="displayNum(0)" >0</button>
+        <button class="btn number" onclick="displayNum('.')" >.</button>
+        <button class="btn equal" onclick="evaluateNum()" >=</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
